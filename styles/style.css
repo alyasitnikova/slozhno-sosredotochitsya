@@ -14,8 +14,8 @@
 }
 
 .header {
-  padding: var(--page-offset) var(--page-offset)
-    clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem) var(--page-offset);
+  margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
+  padding: var(--page-offset) var(--page-offset) 0 var(--page-offset);
   display: grid;
   min-height: 668px;
   height: 100vh;
@@ -145,7 +145,7 @@
 
 .title-decor {
   background-color: var(--accent-bg-color);
-  color: #000028;
+  color: var(--subtitle-color);
   font-weight: var(--accent-font-weight);
   line-height: 23px;
   font-size: inherit;
