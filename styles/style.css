@@ -2,7 +2,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  margin: 0;
   padding: var(--page-offset);
   color: var(--main-text-color);
   font-family: var(--main-font);
@@ -18,9 +17,9 @@
 .header {
   display: grid;
   min-height: 668px;
-  height: calc(100vh - 2 * var(--page-offset));
+  height: 100vh;
   grid-template-rows: 1fr auto 1fr;
-  margin-bottom: 50px;
+  margin-bottom: clamp(0rem, -3.5782rem + 15.2672vw, 3.75rem);
 }
 
 .decorated-zone {
@@ -154,7 +153,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: clamp(3.125rem, 1.3359rem + 7.6336vw, 5rem);
 }
 
 .content-section {
@@ -222,7 +221,7 @@
 }
 
 .footer {
-  height: calc(100vh - 2 * var(--page-offset));
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,6 +281,9 @@
 }
 
 @media not screen, (min-width: 1024px) {
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   .header__theme-menu {
     display: flex;
     justify-content: center;
