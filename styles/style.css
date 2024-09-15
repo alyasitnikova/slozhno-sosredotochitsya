@@ -15,7 +15,7 @@
 
 .header {
   padding: var(--page-offset) var(--page-offset)
-    clamp(0rem, -3.5782rem + 15.2672vw, 3.75rem) var(--page-offset);
+    clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem) var(--page-offset);
   display: grid;
   min-height: 668px;
   height: 100vh;
