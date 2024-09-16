@@ -2,11 +2,11 @@
   --accent-bg-color: #ff8dcb;
   --main-text-color: #353430;
   --accent-color: #353430;
+  --nav-outline-color: rgba(50, 49, 45, 0.4);
   --bg-color: #fff1f7;
   --subtitle-color: #343430;
   --title-color: #ffc2e6;
-
-  background-image: url(../images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .decorated-element {
@@ -18,8 +18,13 @@
     --accent-bg-color: #ff8dcb;
     --main-text-color: #353430;
     --accent-color: #353430;
+    --nav-outline-color: rgba(50, 49, 45, 0.4);
     --bg-color: #fff1f7;
     --subtitle-color: #343430;
     --title-color: #ffc2e6;
+    --bg-image: url(../images/cover-image-light.png);
+  }
+  .decorated-element {
+    display: none;
   }
 }
