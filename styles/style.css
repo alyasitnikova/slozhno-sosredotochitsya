@@ -15,7 +15,7 @@
 
 .header {
   margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
-  padding: var(--page-offset) var(--page-offset) 0 var(--page-offset);
+  padding: var(--page-offset);
   display: grid;
   min-height: 668px;
   height: 100vh;
@@ -207,7 +207,7 @@
 .images-section {
   display: grid;
   gap: var(--page-offset);
-  margin-bottom: 40px;
+  margin-bottom: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
 
 .images-container {
@@ -223,7 +223,6 @@
 }
 
 .footer {
-  padding: 0 var(--page-offset) var(--page-offset) var(--page-offset);
   height: 100vh;
   min-height: 668px;
   display: flex;
@@ -301,7 +300,19 @@
     width: auto;
   }
 
+  .header__theme-menu-item {
+    min-width: 70px;
+  }
+
   .special__content-section .content-section__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .content-section {
+    gap: 12px;
+  }
+
+  .special__content-section {
+    gap: 20px;
   }
 }
